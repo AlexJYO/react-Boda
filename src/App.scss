@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+
+	
+
+        /*========== Colors ==========*/
+        /* Change favorite color */
+
+        $bodyColor: rgb(233,217,132);
+        $bodyDec1: rgba(233,217,132,1);
+        $bodyDec2: rgba(255,255,255,1);
+        $odyDec3: rgba(0,212,255,1);
+
+
+
+        $textColor: #5B4404;
+        $hoverColor: #FFFFFF;
+        $shadowColor: #85929E;
+
+        /*========== Font and typography ==========*/
+        $body-Font: 'Merriweather', 'sans-serif';
+
+        /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+        $bigFontSize: 2rem;
+        $h1FontSize: 1.5rem;
+        $h2FontSize: 1.25rem;
+        $h3FontSize: 1.125rem;
+        $normalFontSize: .938rem;
+        $smallFontSize: .813rem;
+        $smallerFontSize: .75rem;
+        $miniFontSize:.5rem;
+
+        /*========== Font weight ==========*/
+        $fontMedium: 500;
+        $fontSemiBold: 600;
+
+        /*========== Margenes Bottom ==========*/
+        /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+        $mb-0-25: .25rem;
+        $mb-0-5: .5rem;
+        $mb-0-75: .75rem;
+        $mb-1: 1rem;
+        $mb-1-5: 1.5rem;
+        $mb-2: 2rem;
+        $mb-2-5: 2.5rem;
+        $mb-3: 3rem;
+
+        /*========== z index ==========*/
+        $zTooltip: 10;
+        $zFixed: 100;
+        $zModal: 1000;
+
+
+body {
+	padding-top: 1%;
+    margin: 5px 0 5px 0;
+    font-family: $body-Font;
+    font-size: $normalFontSize;
+    color: $textColor;
+    background-color: $bodyColor;
+    background: linear-gradient(0deg, $bodyDec1 0%, $bodyDec2 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1{
+	font-size: $bigFontSize;
+	text-align:center;;
+}
+img{
+	
+	width: 200px;
+	border-radius: 100px;
+	display:block;
+	margin:auto;
+}
+.container{
+	width: 70%;
+	margin-left: 15%;
+	padding-top: 2%;
+	padding-bottom: 1%;
+	border: 2px outset $textColor;
+}
+p{
+	font-size: $h3FontSize;
+	text-align:center;
+}
+.boton{
+	width: 50%;
+	margin: auto;
+	padding: 10px 4px 10px 4px;
+	border: 2px solid $textColor;
+	margin-bottom: 10px;
+	border-radius: 20px;
+	box-shadow: 5px 10px 8px $shadowColor;
+
+}
+.boton:hover{
+	box-shadow: 5px 10px 8px $hoverColor;
+}
+.boton a{
+	text-decoration-line: none;
+	color: $textColor;
+
+} 
+a i{
+	width: 40%;
+	font-size: $h1FontSize;
+	
+}
+a span{
+	width: 60%;
+	text-align: center;
+	font-size: $smallerFontSize;
+
+}
+#asistencia{
+	font-size: $h2FontSize;
+	padding: 3% 0 0 0;
+}
+#datos{
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	padding: 0 2% 4% 2%;
+	border: 2px solid $textColor;
+	border-radius: 30px;
+	box-shadow: 5px 10px 8px $shadowColor;
+}
+#datos p{
+	margin-top: 2%;
+}
+
+#datos input{
+	width: 100%;
+	height: $mb-2;
+	margin-top: 2%;
+	margin-bottom: 3%;
+	background-color: $bodyColor;
+	border-radius: 15px;
+
+}
+#datos a{
+	
+	text-decoration-line: none;
+	color: $textColor;
+
+}
+#Confirmar{
+	width: 100%;
+	margin: auto;
+	border: 2px solid $textColor;
+	border-radius: 15px;
+	text-align: center;
+	padding: 5px 0 5px 0;
+	font-size: $normalFontSize;
+	font-weight: $fontSemiBold;
+	background-color: white;
+}
+#Confirmar:hover{
+	box-shadow: 5px 10px 8px $shadowColor;
+}
+
+@media screen and (max-width: 480px) {
+	body{
+		padding: 10% 0 0 0;
+	}
+	.container{
+		padding-bottom: 15px;
+	}
+	h1{
+		font-size: $h3FontSize;
+		text-align:center;
+	}
+	img{
+		width: 100px;
+		border-radius: 500px;
+		display:block;
+		margin:auto;
+	}
+	.container{
+		margin-left: 15%;
+}
+	p{
+		font-size: $smallerFontSize;
+		text-align:center;
+	}
+	.boton{
+		width: 80%;
+		border-radius: 15px;
+	}
+	a i{
+		width: 30%;
+		font-size: $h1FontSize;
+	
+	}
+	a span{
+		width: 70%;
+		text-align: center;
+		font-size: $smallerFontSize;
+
+	}
+	#asistencia{
+		font-size: $smallerFontSize;
+		padding: 3% 0 0 0;
+	}
+	#datos{
+		width: 80%;
+		border-radius: 20px;
+	}
+	#datos input{
+		width: 100%;
+		height: $mb-2;
+		margin-top: 2%;
+		margin-bottom: 3%;
+		background-color: $bodyColor;
+		border-radius: 15px;
+
+	}
+	#datos a{
+		font-size: $smallerFontSize;
+	}
+	#Confirmar{
+		width: 100%;
+		margin: auto;
+		border: 2px solid $textColor;
+		border-radius: 15px;
+		text-align: center;
+		padding: 5px 0 5px 0;
+		font-size: $normalFontSize;
+		font-weight: $fontSemiBold;
+		background-color: white;
+	}
+}
