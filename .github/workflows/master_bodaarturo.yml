@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'bodaarturo'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_55897D0409F4464CAC9F7130B27F9FFB }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_418053546A4A46DF958E571339AA863D }}
           package: .
