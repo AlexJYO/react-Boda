@@ -6,7 +6,7 @@ function FormularioAsistencia() {
 
     async function requestAsistencia(datosPost){
         try {
-            const url = 'http://localhost:9000/asistencia';
+            const url = 'https://server-boda.azurewebsites.net/asistencia';
             const settings = {
                 method: 'POST',
                 headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
