@@ -1,7 +1,7 @@
 function BodaTitulo() {
     return (
         <>
-            <img src="/src/recursos/Novios.jpeg" />
+            <img src="src/recursos/Novios.jpeg" />
             <h1>NUESTRA BODA</h1>
             <div>
                 <p>
